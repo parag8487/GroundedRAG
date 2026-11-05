@@ -33,7 +33,7 @@ export default function FilterBar({ filters, onChange }: { filters: ChatFilters;
   }, [docs.data]); // only when the list of documents changes, not on every filter edit
 
   return (
-    <div className="animate-fade-up border-b border-slate-200/80 bg-white px-3 py-3 sm:px-4">
+    <div className="relative z-20 animate-fade-up border-b border-slate-200/80 bg-white px-3 py-3 sm:px-4">
       <div className="mx-auto grid max-w-3xl gap-3 sm:grid-cols-2 lg:grid-cols-5">
         <label>
           <span className={fieldLabel}>Department</span>
